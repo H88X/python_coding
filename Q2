@@ -1,0 +1,9 @@
+# Q2 Answer template
+
+def solution(numbers):
+    li = [i for i in range(1,10) if i not in numbers]
+    return sum(li)
+
+numbers = [5,8,4,0,6,7,9]
+answer = solution(numbers)
+print(answer)

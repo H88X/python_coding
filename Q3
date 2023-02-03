@@ -1,9 +1,11 @@
-# Q2 Answer template
+# Q3 answer template
 
-def solution(numbers):
-    li = [i for i in range(1,10) if i not in numbers]
-    return sum(li)
+def solution(store, customer):
+    answer = ['yes'if i in store else 'no' for i in customer]
+    
+    return answer
 
-numbers = [5,8,4,0,6,7,9]
-answer = solution(numbers)
+store = [1,2,3,7,8]
+customer = [1,5,8,4,6]
+answer = solution(store, customer)
 print(answer)
